@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="spiner">
+        <span class="loader"></span>
+    </div>
+    <section class="vh-100 ineer">
+        <div class="container">
+
+            <div class="Content my-5 py-4">
+                <div class="head d-flex m-4 mt-1 mb-4 justify-content-between align-items-center">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <h5 class="text-center ">Music Player</h5>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+
+                <div class="imag m-auto w-75">
+                    <img src="./images/background-3126537_960_720 (1).jpg" class="rounded-2 w-100" alt="">
+                </div>
+                <div class="name text-center mt-4">
+
+                    <h5 class="singerName m-0"></h5>
+                    <p class="songName m-0 text-muted"></p>
+
+                </div>
+                <div class="progress-area position-relative my-4 mb-3 mx-4">
+                    <div id="progressArea" class="progress-bar my-3 mb-2">
+                        <div class="progress">
+                        </div>
+                        <audio id="myAudio" src=""></audio>
+                    </div>
+
+                    <div class="timer d-flex justify-content-between">
+                        <span class="currTime">00:00</span>
+                        <span class="maxTime">00:00</span>
+                    </div>
+                </div>
+
+                <div class="icon d-flex justify-content-around align-items-center my-3">
+                    <div class="random">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </div>
+                    <div class="previuos ">
+                        <i class="fa-solid fa-backward"></i>
+                    </div>
+                    <div class="play">
+                        <i class="fa fa-play"></i>
+                    </div>
+                    <div class="next ">
+                        <i class="fa-solid fa-forward"></i>
+                    </div>
+                    <div class="menu">
+                        <i class=" fa-solid fa-list-1-2"></i>
+                    </div>
+                </div>
+
+                <div class="songList position-absolute">
+                    <div class="xmark position-absolute end-0 mt-2 fs-5 me-3">
+                        <i class="fa fa-xmark-circle text-warning"></i>
+                    </div>
+                    <div class="songs mt-5" id="songs">
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
